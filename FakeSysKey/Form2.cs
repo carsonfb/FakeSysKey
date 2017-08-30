@@ -21,5 +21,19 @@ namespace FakeSysKey
         {
 
         }
+
+        private void cancelSettingsButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pwSystemRadio_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pwStartupRadio_CheckedChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
