@@ -44,9 +44,9 @@ namespace FakeSysKey
             Random rnd            = new Random();
             int strLen            = confirmText.Length;
             int pos               = rnd.Next(1, strLen);
+            int randChar          = rnd.Next(1, 122);
             StringBuilder tempStr = new StringBuilder(confirmText);
-
-            tempStr[pos] = 'A';
+            tempStr[pos] = (char)randChar;
 
             return(tempStr.ToString());
         }
