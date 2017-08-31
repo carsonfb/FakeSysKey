@@ -30,23 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(errorForm));
             this.mismatchLabel = new System.Windows.Forms.Label();
+            this.errorOkButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mismatchLabel
             // 
             this.mismatchLabel.Location = new System.Drawing.Point(12, 9);
             this.mismatchLabel.Name = "mismatchLabel";
-            this.mismatchLabel.Size = new System.Drawing.Size(260, 243);
+            this.mismatchLabel.Size = new System.Drawing.Size(260, 206);
             this.mismatchLabel.TabIndex = 0;
             this.mismatchLabel.Text = "placeholer";
             this.mismatchLabel.UseMnemonic = false;
             this.mismatchLabel.Click += new System.EventHandler(this.mismatchLabel_Click);
+            // 
+            // errorOkButton
+            // 
+            this.errorOkButton.Location = new System.Drawing.Point(101, 226);
+            this.errorOkButton.Name = "errorOkButton";
+            this.errorOkButton.Size = new System.Drawing.Size(75, 23);
+            this.errorOkButton.TabIndex = 1;
+            this.errorOkButton.Text = "OK";
+            this.errorOkButton.UseVisualStyleBackColor = true;
+            this.errorOkButton.Click += new System.EventHandler(this.errorOkButton_Click);
             // 
             // errorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.errorOkButton);
             this.Controls.Add(this.mismatchLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "errorForm";
@@ -61,5 +73,6 @@
         #endregion
 
         private System.Windows.Forms.Label mismatchLabel;
+        private System.Windows.Forms.Button errorOkButton;
     }
 }

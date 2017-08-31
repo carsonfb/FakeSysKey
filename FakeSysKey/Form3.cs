@@ -50,5 +50,10 @@ namespace FakeSysKey
 
             return(tempStr.ToString());
         }
+
+        private void errorOkButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
